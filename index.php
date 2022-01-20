@@ -27,7 +27,7 @@ $u=new Usuario;
     $senha=addslashes($_POST["senha"]);
 
     if(!empty($email)&& !empty($senha)){
-        $u->conectar("","", "", "");  
+        $u->conectar("projeto_login","localhost", "root", "");  
             if($u->msgErro==""){
                 if($u->logar($email,$senha)){
                     header("location:AreaPrivada.php");

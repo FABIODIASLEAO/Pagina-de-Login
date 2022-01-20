@@ -36,7 +36,7 @@ $u =new Usuario;
      $confSenha=addslashes($_POST["confSenha"]);
 
      if(!empty($nome)&&!empty($telefone)&& !empty($email)&& !empty($senha)&& !empty($confSenha)){
-        $u->conectar("","", "", "");
+        $u->conectar("projeto_login","localhost", "root", "");
             if($u->msgErro==""){
                 if($senha==$confSenha){
                         if($u->cadastrar($nome, $telefone, $email, $senha)){
