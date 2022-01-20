@@ -19,5 +19,6 @@ exit;
 </head>
 <body>
 <h1>Seja Bem vindo!!</h1>
+<a href="sair.php">Sair</a>
 </body>
 </html>
